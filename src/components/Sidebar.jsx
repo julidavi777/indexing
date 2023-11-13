@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaQuestionCircle } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleQuestion } from '@fortawesome/free-regular-svg-icons';
 
 const Sidebar = () => {
   const [open, setOpen] = useState('');
@@ -51,7 +52,7 @@ const Sidebar = () => {
         </ul>
         <button type="button" onClick={() => setSelected(selected === 'faqs' ? '' : 'faqs')} className={`w-full flex justify-center items-center mt-5 mb-2 p-1 rounded ${selected === 'faqs' ? 'text-red-600 transform scale-110' : ''} hover:text-red-600`}>
           <span>FAQs</span>
-          <FaQuestionCircle className="ml-2" />
+          <FontAwesomeIcon icon={faCircleQuestion} className="ml-2" />
         </button>
         <button type="button" onClick={() => setSelected(selected === 'support' ? '' : 'support')} className={`w-full flex justify-center items-center mt-5 mb-2 p-1 rounded ${selected === 'support' ? 'text-red-600 transform scale-110' : ''} hover:text-red-600`}>
           Support
