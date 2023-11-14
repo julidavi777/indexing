@@ -1,0 +1,9 @@
+::placeholder { color: white } 
+:-ms-input-placeholder { color: white; } /* IE 10+ */
+::-webkit-input-placeholder { color: white; } /* WebKit */
+::-moz-placeholder { color: white; } /* Firefox 19+ */
+body{
+    background: #101718 ;
+    
+}
+
