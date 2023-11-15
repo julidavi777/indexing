@@ -13,7 +13,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="w-48 h-screen fixed left-0 top-0 bg-gray-800 text-white border-r border-gray-600">
+    <aside className="w-48 min-h-screen  left-0 top-0 text-white border-r border-gray-600">
       <nav className="p-5">
         <ul className="space-y-5">
           <li className="flex flex-col space-y-5">

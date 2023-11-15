@@ -6,10 +6,9 @@ import Header from './components/Header';
 function App() {
   return (
     <>
-    <Sidebar />
-    <Button value='badge' type='submit' />
     <div className=''>
      <Header /> 
+     <Sidebar></Sidebar>
     </div>
     </>
   )
