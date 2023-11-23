@@ -14,7 +14,7 @@ const Button = ({ value, type, color, icon, img }) => {
   return (
     <div className='flex'>
       <button
-        className={`flex px-5 py-3 text-white bold rounded-lg bg-purple-900	hover:bg-indigo-500   cursor-pointer ${color}`}
+        className={`flex px-5 py-3 text-white bold rounded-lg  cursor-pointer ${color}`}
         type={type}
       >
         {value}

@@ -15,7 +15,7 @@ const Header = () => {
           <img src={logo} alt='Logo de Indexart' className="" id="logoImage"  />
         </div>
          <div>
-          <Button value='badge' type='submit' icon="" />
+          <Button value='badge' type='submit' icon="" color="primary" />
         </div>
         <div className="flex justify-center text-white w-1/4 p-2  rounded-sm bg-neutral-600" >
             <div className="pe-1 z-0 " ><img src={loupe} width="25" alt="Search"/></div>
@@ -25,7 +25,7 @@ const Header = () => {
           <Button value='Inscribe your Ordinals' type='submit' color="secondary" icon={pencil} />
         </div>
         <div>
-          <Button value='Connect your Wallet' type='submit' icon={wallet}/>
+          <Button value='Connect your Wallet' color="primary" type='submit' icon={wallet}/>
         </div> 
       </div>
     </>
