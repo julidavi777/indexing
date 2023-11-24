@@ -10,6 +10,7 @@ import wallet from "../assets/icons/wallet.png";
 import Play from "../assets/icons/playTriangle.png";
 import Banner from "../components/Banner";
 import Item from "../components/Item";
+
 function Main() {
   return (
     <>
