@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "./App.css";
 import Button from "./components/button";
 import Sidebar from "./components/Sidebar";
@@ -10,12 +11,18 @@ import btc from "./assets/icons/btc.svg";
 import wallet from "./assets/icons/wallet.png";
 import Play from "./assets/icons/playTriangle.png";
 import SatoshiShow from "./pages/SatoshiShow";
-import Main from "./pages/Main"
+import Main from "./pages/Main";
+import AddForm from "./pages/AddForm";
+
 function App() {
   return (
-    <>
-      <Main></Main>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/satoshi-show" element={<SatoshiShow />} />
+        <Route path="/add-form" element={<AddForm />} />
+        <Route path="/" element={<Main />} />
+      </Routes>
+    </Router>
   );
 }
 
